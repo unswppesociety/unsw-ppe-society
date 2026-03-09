@@ -3,49 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about UNSW PPE Society - our mission, values, and executive team">
-    <title>About | UNSW PPE Society</title>
+    <meta name="description" content="About UNSW PPEsoc - our society and the PPE degree">
+    <title>About | UNSW PPEsoc</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation (same as index.html) -->
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="PPE Society Logo" height="50">
-                <span class="ms-2">UNSW PPE Society</span>
+                <span class="ms-2">UNSW PPEsoc</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Support</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="academics.html">Academics</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="about.html">About</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Publications</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resources.html">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://unswppesoc.carrd.co/" target="_blank">Links <i class="fas fa-external-link-alt fa-sm"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary ms-lg-3" href="contact.html#signup">Join Us</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://unswppesoc.carrd.co/" target="_blank">Links <i class="fas fa-external-link-alt fa-sm"></i></a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-lg-3" href="https://campus.hellorubric.com/?tab=memberships&s=4943" target="_blank">Join Us</a></li>
                 </ul>
             </div>
         </div>
@@ -54,69 +50,78 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1 class="display-4 fw-bold">About Us</h1>
-            <p class="lead">Learn more about UNSW PPE Society</p>
+            <h1 class="display-4 fw-bold">About</h1>
+            <p class="lead">Our society and the PPE degree</p>
         </div>
     </section>
 
-    <!-- Mission Section -->
+    <!-- What is PPEsoc -->
     <section class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="mb-4">Our Mission</h2>
-                    <p class="lead">The UNSW Politics, Philosophy, and Economics Society is dedicated to fostering intellectual curiosity and critical thinking among students interested in these interconnected disciplines.</p>
-                    <p>We provide a platform for students to:</p>
-                    <ul class="list-styled">
-                        <li>Engage in thoughtful discussions about current affairs and philosophical questions</li>
-                        <li>Connect with like-minded peers and build a supportive community</li>
-                        <li>Access valuable resources for academic and career development</li>
-                        <li>Hear from industry leaders, academics, and thought leaders</li>
-                        <li>Develop critical thinking and analytical skills</li>
-                    </ul>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">What is PPEsoc?</h2>
+                    <p class="lead">The PPE Society brings together students who are curious about politics, philosophy, and economics, and who enjoy discussing big ideas in a welcoming, social environment.</p>
+                    <p>We're about building a community of students who like to think critically, share perspectives, and learn from one another. Alongside speaker events, panels, and publications, we run socials, casual discussions, and workshops.</p>
+                    <p>Whether you're deeply invested in public policy or just enjoy thoughtful conversation over coffee, the PPE Society offers a friendly space to meet like-minded people, exchange ideas, and be part of an engaged and supportive community.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm p-4 text-center h-100">
+                                <i class="fas fa-comments fa-2x text-primary mb-2"></i>
+                                <h6>Discussions</h6>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm p-4 text-center h-100">
+                                <i class="fas fa-chalkboard-teacher fa-2x text-primary mb-2"></i>
+                                <h6>Speaker Events</h6>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm p-4 text-center h-100">
+                                <i class="fas fa-newspaper fa-2x text-primary mb-2"></i>
+                                <h6>Publications</h6>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm p-4 text-center h-100">
+                                <i class="fas fa-users fa-2x text-primary mb-2"></i>
+                                <h6>Socials</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- What is PPE Section -->
+    <!-- PPE Degree -->
     <section class="py-5 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h2 class="mb-4 text-center">What is PPE?</h2>
-                    <div class="row g-4 mt-4">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="mb-4">The PPE Degree</h2>
+                    <p class="lead">The Bachelor of Politics, Philosophy and Economics (PPE) at UNSW provides you with the opportunity to drive progress and make meaningful change where issues of politics, philosophy and economics intersect.</p>
+                    <p>The PPE degree and the PPE/Law double degree allow you to access courses from the humanities and economics fields, enriching your ability to consider the biggest challenges facing our world. Through the degree, you will build skills required in public policy, social activism, finance, diplomacy, economics and many more fields.</p>
+                    <div class="row g-4 mt-3">
                         <div class="col-md-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="icon-box mb-3">
-                                        <i class="fas fa-landmark fa-3x text-primary"></i>
-                                    </div>
-                                    <h4>Politics</h4>
-                                    <p>Understanding power, governance, and the structures that shape our societies and international relations.</p>
-                                </div>
+                            <div class="card border-0 shadow-sm text-center p-4 h-100">
+                                <i class="fas fa-landmark fa-2x text-primary mb-3"></i>
+                                <h5>Public Policy</h5>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="icon-box mb-3">
-                                        <i class="fas fa-brain fa-3x text-primary"></i>
-                                    </div>
-                                    <h4>Philosophy</h4>
-                                    <p>Exploring fundamental questions about ethics, knowledge, reality, and the human condition through critical reasoning.</p>
-                                </div>
+                            <div class="card border-0 shadow-sm text-center p-4 h-100">
+                                <i class="fas fa-globe fa-2x text-primary mb-3"></i>
+                                <h5>Diplomacy</h5>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="icon-box mb-3">
-                                        <i class="fas fa-chart-line fa-3x text-primary"></i>
-                                    </div>
-                                    <h4>Economics</h4>
-                                    <p>Analyzing how societies allocate resources, make decisions, and create value in an interconnected world.</p>
-                                </div>
+                            <div class="card border-0 shadow-sm text-center p-4 h-100">
+                                <i class="fas fa-balance-scale fa-2x text-primary mb-3"></i>
+                                <h5>Social Activism</h5>
                             </div>
                         </div>
                     </div>
@@ -125,60 +130,14 @@
         </div>
     </section>
 
-    <!-- Executive Team -->
-    <section class="py-5">
+    <!-- Become a Member -->
+    <section class="py-5 bg-primary text-white text-center">
         <div class="container">
-            <h2 class="text-center mb-5">Our Executive Team</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-3">
-                    <div class="card team-card text-center">
-                        <div class="card-body">
-                            <div class="team-avatar mb-3">
-                                <i class="fas fa-user-circle fa-5x text-primary"></i>
-                            </div>
-                            <h5 class="card-title">James Doak</h5>
-                            <p class="text-muted">President</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more executive members here as needed -->
-                <div class="col-md-3">
-                    <div class="card team-card text-center">
-                        <div class="card-body">
-                            <div class="team-avatar mb-3">
-                                <i class="fas fa-user-circle fa-5x text-secondary"></i>
-                            </div>
-                            <h5 class="card-title">Executive Member</h5>
-                            <p class="text-muted">Vice President</p>
-                            <p class="small text-muted">To be updated</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card team-card text-center">
-                        <div class="card-body">
-                            <div class="team-avatar mb-3">
-                                <i class="fas fa-user-circle fa-5x text-secondary"></i>
-                            </div>
-                            <h5 class="card-title">Executive Member</h5>
-                            <p class="text-muted">Secretary</p>
-                            <p class="small text-muted">To be updated</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card team-card text-center">
-                        <div class="card-body">
-                            <div class="team-avatar mb-3">
-                                <i class="fas fa-user-circle fa-5x text-secondary"></i>
-                            </div>
-                            <h5 class="card-title">Executive Member</h5>
-                            <p class="text-muted">Treasurer</p>
-                            <p class="small text-muted">To be updated</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2 class="mb-3">Become a Member!</h2>
+            <p class="lead mb-4">Become a part of our community and get access to all our opportunities, resources and events!</p>
+            <a href="https://campus.hellorubric.com/?tab=memberships&s=4943" target="_blank" class="btn btn-light btn-lg">
+                <i class="fas fa-user-plus me-2"></i>Join PPEsoc — It's Free!
+            </a>
         </div>
     </section>
 
@@ -187,39 +146,33 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5>UNSW PPE Society</h5>
-                    <p>Politics, Philosophy & Economics Society at the University of New South Wales</p>
+                    <h5>UNSW PPEsoc</h5>
+                    <p class="text-white-50">The constituent society for UNSW Politics, Philosophy and Economics students.</p>
                 </div>
                 <div class="col-md-4 mb-3">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="about.html" class="text-white-50">About</a></li>
                         <li><a href="events.html" class="text-white-50">Events</a></li>
-                        <li><a href="resources.html" class="text-white-50">Resources</a></li>
+                        <li><a href="careers.html" class="text-white-50">Careers</a></li>
+                        <li><a href="academics.html" class="text-white-50">Academics</a></li>
+                        <li><a href="blog.html" class="text-white-50">Blog</a></li>
                         <li><a href="contact.html" class="text-white-50">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-3">
                     <h5>Follow Us</h5>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/UNSWPPESoc" target="_blank" class="text-white me-3">
-                            <i class="fab fa-facebook fa-2x"></i>
-                        </a>
-                        <a href="https://www.instagram.com/unswppesoc/" target="_blank" class="text-white me-3">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/unsw-politics-philosophy-and-economics-society" target="_blank" class="text-white me-3">
-                            <i class="fab fa-linkedin fa-2x"></i>
-                        </a>
-                        <a href="https://discord.com/invite/vVJ84bCXz6" target="_blank" class="text-white">
-                            <i class="fab fa-discord fa-2x"></i>
-                        </a>
+                        <a href="https://www.facebook.com/UNSWPPESoc" target="_blank" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/unswppesoc/" target="_blank" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/company/unsw-politics-philosophy-and-economics-society" target="_blank" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://discord.com/invite/vVJ84bCXz6" target="_blank" class="text-white"><i class="fab fa-discord fa-2x"></i></a>
                     </div>
                 </div>
             </div>
-            <hr class="bg-white">
-            <div class="text-center">
-                <p class="mb-0">&copy; 2026 UNSW PPE Society. All rights reserved.</p>
+            <hr class="border-secondary">
+            <div class="text-center text-white-50">
+                <p class="mb-0">&copy; 2026 UNSW PPEsoc. All rights reserved.</p>
             </div>
         </div>
     </footer>

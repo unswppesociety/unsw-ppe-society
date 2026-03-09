@@ -32,14 +32,6 @@ PPE Society/
 
 ## 🚀 Getting Started
 
-### 1. Add Your Logo
-- Place your PPE Society logo image in the `images/` folder
-- Name it `logo.png` (or update the image src in all HTML files)
-
-### 2. Test Locally
-Simply open `index.html` in your web browser to view the website locally.
-
-### 3. Customize Content
 
 #### Update Executive Team (about.html)
 - Add/remove team member cards
@@ -55,41 +47,8 @@ Simply open `index.html` in your web browser to view the website locally.
 3. Copy the iframe code
 4. Replace the placeholder form in contact.html with your iframe
 
-## 🌍 Deploy to GitHub Pages (FREE Hosting!)
 
-### Step 1: Create a GitHub Repository
-1. Go to [github.com](https://github.com)
-2. Click "New repository"
-3. Name it: `unsw-ppe-society` (or your preferred name)
-4. Keep it **Public**
-5. Don't initialize with README (we already have one)
-6. Click "Create repository"
-
-### Step 2: Upload Your Website
-Open Terminal and run these commands:
-
-```bash
-cd "/Users/aleababeck/Desktop/Desktop/PPE Society"
-git init
-git add .
-git commit -m "Initial commit - UNSW PPE Society website"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/unsw-ppe-society.git
-git push -u origin main
-```
-
-**Replace `YOUR_USERNAME` with your GitHub username!**
-
-### Step 3: Enable GitHub Pages
-1. Go to your repository on GitHub
-2. Click "Settings" (top menu)
-3. Click "Pages" (left sidebar)
-4. Under "Source", select "main" branch
-5. Click "Save"
-6. Wait 2-3 minutes for deployment
-7. Your site will be live at: `https://YOUR_USERNAME.github.io/unsw-ppe-society/`
-
-### Step 4: Get Your Website on Google
+### Your Website on Google
 
 #### Add to Google Search Console
 1. Go to [search.google.com/search-console](https://search.google.com/search-console)
@@ -132,7 +91,7 @@ Edit `blog.html` and duplicate the blog card structure:
 
 ## 👥 For Multiple Editors
 
-Since you mentioned multiple people need to update the site, here are your options:
+
 
 ### Option 1: GitHub (Recommended)
 - All team members create GitHub accounts
@@ -179,9 +138,3 @@ If you need technical assistance:
 ## 📄 License
 
 This website is for UNSW PPE Society. Feel free to customize and use it!
-
----
-
-**Built with ❤️ for the UNSW PPE Community**
-
-*Last Updated: January 2026*
