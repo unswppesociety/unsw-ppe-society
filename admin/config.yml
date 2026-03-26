@@ -1,0 +1,117 @@
+backend:
+  name: github
+  repo: unswppesociety/unsw-ppe-society
+  branch: main
+  auth_endpoint: auth
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  # Events Collection
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Event Title", name: "title", widget: "string", required: true }
+      - { label: "Date", name: "date", widget: "datetime", required: true }
+      - { label: "Time", name: "time", widget: "string", hint: "e.g., 6:00 PM - 8:00 PM" }
+      - { label: "Location", name: "location", widget: "string", required: true }
+      - { label: "Event Type", name: "type", widget: "select", options: ["Upcoming", "Academic", "Careers", "Social", "Panel", "Workshop"] }
+      - { label: "Description", name: "body", widget: "markdown", hint: "Describe what the event is about" }
+      - { label: "Registration Link", name: "registration_link", widget: "string", required: false }
+
+  # Blog Posts Collection
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Post Title", name: "title", widget: "string", required: true }
+      - { label: "Publish Date", name: "date", widget: "datetime", required: true }
+      - { label: "Category", name: "category", widget: "select", options: ["Philosophy", "Politics", "Economics", "News", "Student Spotlight"] }
+      - { label: "Author", name: "author", widget: "string", required: true }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Post Content", name: "body", widget: "markdown" }
+
+  # Team Members Collection
+  - name: "team"
+    label: "Executive Team"
+    folder: "content/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string", required: true }
+      - { label: "Position", name: "position", widget: "string", required: true, hint: "e.g., President, Vice President, Secretary" }
+      - { label: "Bio", name: "bio", widget: "text", required: false }
+      - { label: "Photo", name: "photo", widget: "image", required: false }
+      - { label: "Email", name: "email", widget: "string", required: false }
+      - { label: "Order", name: "order", widget: "number", default: 0, hint: "Lower number = appears first" }
+
+  # Pages Collection (for editing static pages)
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/pages/home.md"
+        fields:
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "About Section", name: "about", widget: "markdown" }
+          - { label: "CTA Button Text", name: "cta_text", widget: "string" }
+          - { label: "CTA Button Link", name: "cta_link", widget: "string" }
+
+      - label: "About Page"
+        name: "about"
+        file: "content/pages/about.md"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "PPEsoc Description", name: "ppesoc_description", widget: "markdown" }
+          - { label: "PPE Degree Description", name: "degree_description", widget: "markdown" }
+
+      - label: "Careers Page"
+        name: "careers"
+        file: "content/pages/careers.md"
+        fields:
+          - { label: "Intro Text", name: "intro", widget: "markdown" }
+          - { label: "What We Offer", name: "offerings", widget: "markdown" }
+          - { label: "Careers Board Link", name: "careers_link", widget: "string" }
+          - { label: "Jobs Board Link", name: "jobs_link", widget: "string" }
+
+      - label: "Academics Page"
+        name: "academics"
+        file: "content/pages/academics.md"
+        fields:
+          - { label: "Intro Text", name: "intro", widget: "markdown" }
+          - { label: "Events Description", name: "events_desc", widget: "markdown" }
+          - { label: "Course Map Link", name: "course_map_link", widget: "string", required: false }
+          - { label: "PASS Program Link", name: "pass_link", widget: "string" }
+
+      - label: "Contact Info"
+        name: "contact"
+        file: "content/pages/contact.md"
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Discord Link", name: "discord", widget: "string" }
+          - { label: "Facebook URL", name: "facebook", widget: "string" }
+          - { label: "Instagram URL", name: "instagram", widget: "string" }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+
+  # Opportunities/Jobs Collection
+  - name: "opportunities"
+    label: "Job Opportunities"
+    folder: "content/opportunities"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Job Title", name: "title", widget: "string", required: true }
+      - { label: "Company", name: "company", widget: "string", required: true }
+      - { label: "Job Type", name: "job_type", widget: "select", options: ["Internship", "Graduate Role", "Scholarship", "Volunteer"] }
+      - { label: "Posted Date", name: "date", widget: "datetime" }
+      - { label: "Application Deadline", name: "deadline", widget: "datetime", required: false }
+      - { label: "Description", name: "body", widget: "markdown" }
+      - { label: "Application Link", name: "application_link", widget: "string" }
